@@ -87,7 +87,6 @@ Eigen::Vector3d SensorMagPlugin::getMagFromJSBSim() {
     pitch_rad = _sim_ptr->GetPropertyValue(_jsb_mag_pitch);
     heading_rad = wrap_pi(_sim_ptr->GetPropertyValue(_jsb_mag_hdg));
 
-
     // Magnetic strength (10^5xnanoTesla)
     float strength_ga = 0.01f * get_mag_strength(lat_deg, lon_deg);
 
